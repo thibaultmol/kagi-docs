@@ -6,36 +6,29 @@ Introducing the Kagi LLM Benchmarking Project, which evaluates major large langu
 
 The Kagi LLM Benchmarking Project uses an unpolluted benchmark to assess contemporary large language models (LLMs) through diverse, challenging tasks. Unlike standard benchmarks, our tests frequently change and are mostly novel, providing a rigorous evaluation of the models' capabilities, (hopefully) outside of what models saw in the training data to avoid benchmark overfitting. 
 
-Last updated **Oct 24, 2024**.
+Last updated **Dec 6, 2024**
 
 
-| Model | Accuracy (%)| Tokens | Total Cost ($) | Median Latency (s) | Speed (tokens/sec) |
-|------------------------------------------|----------|--------|----------------|--------------------|--------------------|
-| OpenAI **gpt-4o** | 52 | 5889 | 0.11922 | 1.08 | 50.49 |
-| Together **meta-llama/Meta-Llama-3.1-405B-Instruct-Turbo** | 50 | 7767  | 0.07136  | 2.00    | 46.49 |  
-| OpenAI **o1-mini** | 50 | 29820| 0.37716 | 4.35 | n/a |
-| Anthropic **claude-3.5-sonnet-202410220** | 48 | 6595 | 0.12018 | 2.54 | 48.90 |
-| OpenAI **o1-preview** | 48 | 38440| 2.40306 | 9.29 | n/a |
-| OpenRouter **nvidia/llama-3.1-nemotron-70b-instruct** | 44 | 11989 | 0.00700 | 5.71 | 26.81 |
-| Mistral **large-latest** | 44 | 5097 | 0.06787 | 3.08 | 18.03 |
-| OpenAI **gpt-4o-mini** | 42 | 6029 | 0.00451 | 1.64 | 36.92 |
-| Groq **llama-3.1-70b-versatile** | 40 | 5190 | 0.00781 | 0.71 | 81.62 |
-| OpenRouter **x-ai/grok-2** | 40 | 6917 | 0.10141 | 2.47 | 41.15 |
-| OpenRouter **nousresearch/hermes-3-llama-3.1-405b:free** | 40 | 6075 | 0.00000 | 3.93 | 19.05 |
-| Reka **reka-core** | 36 | 6966 | 0.12401 | 6.21 | 17.56 |
-| DeepSeek **deepseek-chat** | 32 | 7310 | 0.00304 | 4.81 | 17.20 |
-| Anthropic **claude-3-haiku-20240307** | 28 | 5642 | 0.00881 | 1.33 | 55.46 |
-| Groq **llama-3.1-8b-instant** | 28 | 6628 | 0.00085 | 2.26 | 82.02 |
-| OpenRouter **mistralai/ministral-8b** | 28 | 5415 | 0.00120 | 1.12 | 72.76 |
-| DeepSeek **deepseek-coder** | 28 | 8079 | 0.00327 | 4.13 | 16.72 |
-| OpenAI **gpt-4** | 26 | 2477 | 0.33408 | 1.32 | 16.68 |
-| Mistral **open-mistral-nemo** | 22 | 4135 | 0.00323 | 0.65 | 82.65 |
-| Groq **gemma2-9b-it** | 22 | 4889 | 0.00249 | 1.69 | 54.39 |
-| OpenAI **gpt-3.5-turbo** | 22 | 1569 | 0.01552 | 0.51 | 45.03 |
-| Reka **reka-edge** | 20 | 5377 | 0.00798 | 2.02 | 46.87 |
-| Reka **reka-flash** | 16 | 5738 | 0.01668 | 3.28 | 28.75 |
-| GoogleGenAI **gemini-1.5-pro-exp-0801** | 14 | 4942 | 0.26325 | 1.82 | 28.19 |
-| GoogleGenAI **gemini-1.5-flash** | 14 | 5287 | 0.02777 | 3.02 | 21.16 |
+| Model | Accuracy (%) | Tokens | Total Cost ($) | Median Latency (s) | Speed (tokens/sec) |
+|-----------------------------|---------------|--------|----------------|------------------|-------------------|
+| **Qwen** QWQ-32B | 50.00 | 45293 | 0.02835 | 15.46 | n/a |
+| **OpenAI** gpt-4o | 48.39 | 10371 | 0.12033 | 2.07 | 48.31 |
+| **Meta** llama-3.3-70b-versatile | 43.55 | 15145 | 0.01689 | 2.46 | 85.80 |
+| **Anthropic** Claude-3.5-sonnet-20241022 | 43.55 | 9869 | 0.17042 | 2.69 | 50.13 |
+| **Mistral** Large-2411 | 41.94 | 12500 | 0.09042 | 3.07 | 38.02 |
+| **Amazon** Nova-Pro | 40.32 | 15160 | 0.05426 | 3.08 | 60.42 |
+| **Anthropic** Claude-3.5-haiku-20241022 | 37.10 | 9695 | 0.05593 | 2.08 | 56.60 |
+| **OpenAI** o1-mini | 37.10 | 42965 | 0.53978 | 5.24 | n/a |
+| **Meta** llama-3.1-405B-Instruct-Turbo | 32.26 | 12315 | 0.09648 | 2.33 | 33.77 |
+| **Meta** llama-3.1-70b-versatile | 30.65 | 12622 | 0.01495 | 1.42 | 82.35 |
+| **Amazon** Nova-Lite | 24.19 | 16325 | 0.00431 | 2.29 | 87.93 |
+| **Google** gemini-1.5-flash | 22.58 | 6806 | 0.00962 | 0.66 | 77.93 |
+| **Amazon** Nova-Micro | 22.58 | 16445 | 0.00253 | 1.97 | 106.47 |
+| **Qwen** Qwen-2.5-72B | 20.97 | 8616 | 0.07606 | 9.08 | 10.08 |
+| **OpenAI** gpt-4o-mini | 19.35 | 13363 | 0.00901 | 1.53 | 66.41 |
+| **Anthropic** Claude-3-haiku-20240307 | 9.68 | 10296 | 0.01470 | 1.44 | 108.38 |
+
+
 
 
 The table includes metrics such as overall mode quality (measured as percent of correct responses), total tokens output (some models are less verbose by default, affecting both cost and speed), total cost to run the test, median response latency and average speed in tokens per second at the time of testing.
@@ -82,6 +75,7 @@ The table below is updated to the best of our abilities, feel free to submit cha
 | **GPT-4 (32k)**                    | 32K            | 60                    | 120                    |
 | **GPT-3.5-Turbo**                  | 16K            | 0.5                   | 1.5                    |
 | **Claude 3 Haiku**                 | 200K           | 0.25                  | 1.25                   |
+| Claude 3.5 Haiku                   | 200K           | 1                     | 5                      |
 | **Claude 3.5 Sonnet**              | 200K           | 3                     | 15                     |
 | **Claude 3 Opus**                  | 200K           | 15                    | 75                     |
 | **Gemini 1.5 Pro** (128K/1M)       | 1M             | 3.50/7                | 10.50/21               |

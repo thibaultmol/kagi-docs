@@ -23,7 +23,7 @@ The next time you visit that website, Orion will show you the list of saved pass
 
 ![macOS Fill Password](./media/macos_passwords_2_fill_password.png){width=500px data-zoomable}
 
-Orion also allows you to manage your saved passwords. To access the Passwords window, go to the **Window** menu and click on **Passwords**.
+Orion also allows you to manage your saved passwords. To access the Passwords window, go to the **Tools** menu and click on **Passwords**.
 
 ![macOS Passwords Menu](./media/macos_passwords_3_passwords_menu.png){width=500px data-zoomable}
 
@@ -52,17 +52,22 @@ If you want to use your Safari passwords in Orion, you will need to import the p
 <a name="import_safari_passwords"></a>
 ## Importing Safari Passwords into Orion on macOS {#import_safari_passwords}
 
-Orion on macOS can import your passwords from Safari 15+ on macOS. These versions of Safari ship with macOS 12 (Monterey) and macOS 13 (Ventura). They are also available on macOS 11 (Big Sur) through the [Safari Technology Preview](https://developer.apple.com/safari/download/).
+Orion on macOS can import your passwords from Safari 15+ on macOS. These versions of Safari ship with macOS 12 (Monterey) and newer. They are also available on macOS 11 (Big Sur) through the [Safari Technology Preview](https://developer.apple.com/safari/download/).
 
-Once you have Safari 15+, follow these steps in Orion:
+1. Open Safari and select **File** > **Export** > **Passwords** and select a location to save the passwords file. Note that this file will be saved without encryption so
+choose the location appropriately and consider deleting it once import is complete.
 
-1. Click the **File** menu, choose **Import From**, and choose **Safari**.
+2. In Orion, click the **File** menu, choose **Import From**, and select **Safari**.
 
 ![Importing from Safari](./media/macos_import_from_safari.png){width=500px data-zoomable}
 
-2. Orion can import many different types of data from Safari, including passwords. Check and uncheck your desired import data and then click the **Import** button.
+3. Orion can import various types of data from Safari, including passwords. Select your desired import data types by checking or unchecking the appropriate boxes, then click the **Import** button.
 
 ![Safari Import](./media/macos_safari_import.png){width=300px data-zoomable}
+
+4. Select the passwords file you exported in step 1.
+
+![Safari Import](./media/macos_safari_import_csv.png){width=300px data-zoomable}
 
 <a name="syncing_passwords"></a>
 ## Syncing Passwords in Orion {#syncing_passwords}
@@ -72,17 +77,22 @@ To sync Orion passwords across devices, perform these steps <u>on each device</u
 <a name="syncing_passwords_macos"></a>
 ### macOS {#syncing_passwords_macos}
 
-1. Click the Apple menu (), click **System Preferences**, and click **Apple ID**.
+1. Click the Apple menu (), click **System Settings**.
    - If you're using macOS 3.14 (Mojave), you don't need to click Apple ID.
    
-![Open macOS System Preferences](./media/macos_open_system_prefs_menu.png){width=300px data-zoomable}
+![Open macOS System Settings](./media/macos_open_system_settings_menu.png){width=300px data-zoomable}
 
-![Open macOS System Preferences](./media/macos_appleid_button.png){width=500px data-zoomable}
+2. Open **iCloud**.
 
+![Open macOS System Settings](./media/macos_appleid_button.png){width=500px data-zoomable}
 
-2. In your iCloud/Apple ID settings, check the **Keychain** box if it isn't already checked.
+3. Open **Passwords**.
 
-![Open macOS System Preferences](./media/macos_icloud_keychain.png){width=500px data-zoomable}
+![Open macOS System Settings](./media/macos_appleid_passwords.png){width=500px data-zoomable}
+
+4. Enable **Sync this Mac**.
+
+![Open macOS System Settings](./media/macos_icloud_keychain.png){width=300px data-zoomable}
 
 <a name="syncing_passwords_ios"></a>
 ### iOS {#syncing_passwords_ios}
