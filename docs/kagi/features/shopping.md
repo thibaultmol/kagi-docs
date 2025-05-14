@@ -2,6 +2,8 @@
 
 Kagi surfaces shopping results featuring unbiased reviews and no affiliate links to help you identify the best product across categories.
 
+**Note:** This feature is currently unavailable because the data source for shopping results was discontinued earlier this year. We are working on redesigning our search widgets, including shopping, and plan to build a new shopping widget from scratch. Its design and functionality are still being defined, and we welcome your suggestions here: [Kagi Feedback](https://kagifeedback.org/d/120-add-a-shopping-widget/32).
+
 For example, consider searching for "Best Headphones":
 
 <img src="./media/best_headphones_search.png" alt="Best Headphones">
