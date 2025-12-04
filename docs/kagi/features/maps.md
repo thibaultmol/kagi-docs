@@ -1,14 +1,19 @@
 # Kagi Maps
 
-[Kagi Maps](https://kagi.com/maps) is a powerful tool that simplifies the process of finding businesses, points of interest, and addresses. With Kagi Maps, you can easily search for locations, get driving or walking directions, and discover interesting stops along your route.
+[Kagi Maps](https://kagi.com/maps) is a powerful tool that simplifies the process of finding businesses, points of interest, and addresses. 
+
+::: warning Kagi Maps is still WIP
+Kagi Maps got a full rework in Q2 2025 and might lack some features (such as directions, or ability to manually set your location) in the meantime.
+Be sure to look at the suggestions for features on [Kagifeedback](https://kagifeedback.org/t/feature-maps?sort=latest)
+:::
+
+With Kagi Maps, you can easily search for locations, get driving or walking directions, and discover interesting stops along your route.
 
 ![Kagi Maps](./media/kagi_maps_hero.png){width=675px data-zoomable}
 
 ## Kagi Maps Privacy
 
 Unlike other competing Map services that track your location to serve you ads, Kagi does not track or store your search history or location data.
-
-We (optionally) support two [methods for setting your location](#enabling_geolocation): setting it manually or automatic detection, but in both cases it will only be stored in your browser storage and not in our servers.
 
 ## Kagi Maps 3D View
 
@@ -27,27 +32,33 @@ For a better experience while using Kagi Maps, we recommend sharing your geoloca
 
 ![Kagi Maps - Geolocation Button](./media/kagi_maps_geolocation_button.png){width=500px data-zoomable}
 
-You will be presented with two options to set your location:
+Your browser will prompt you to grant Kagi Maps permission to access your location using its built-in geolocation system. Depending on your browser, you may see options such as:
 
-1. The first one is to use your browser’s built-in geolocation function to automatically identify and share your real time location with Kagi Maps.
-2. You can also set your location manually by clicking the **Set My Location Manually** button.
+- **Allow while visiting the site** (automatically allow location access whenever you visit Kagi Maps in the future)
+- **Allow this time** (share your location only once)
+- **Never allow** (deny access)
 
-![Kagi Maps - Geolocation Options](./media/kagi_maps_geolocation_options.png){width=500px data-zoomable}
-
-If you opted to use your browser’s built-in geolocation, your browser might prompt you to give Kagi permission to detect your location, please click the **Allow** button:
+Choose the option that best fits your privacy preferences. If you want to minimize ongoing access, select "Allow this time." If you’re comfortable with Kagi Maps accessing your location whenever you use the site, choose "Allow while visiting the site."
 
 ![Kagi Maps - Geolocation Options](./media/kagi_maps_geolocation_permission.png){width=500px data-zoomable}
 
-If you chose the **Set My Location Manually** option, you will be able to drag the map so that the blue dot is positioned in your location, then click on **Done**.
+## Control Panel
 
-![Kagi Maps - Geolocation Options](./media/kagi_maps_geolocation_manually.png){width=500px data-zoomable}
+Kagi Maps includes a Control Panel that allows you to customize your map experience to better suit your needs. You can access the Control Panel from the main map interface using the icon in the top right.
 
-## Changing Kagi Maps Unit System
+The Control Panel currently offers the following options:
 
-Kagi Maps allows you to change the unit system used for displaying distances. You can choose between metric units (kilometers and meters) or imperial units (miles and feet). To change the unit system, simply click on the scale bar at the bottom of the screen.
+- **Additional Wikipedia POIs**  
+  Enable this to display extra geospatial Wikipedia articles that are considered more controversial or historic (such as plane crashes, riots, or shipwrecks). This feature is opt-in and can be toggled on or off. Future updates will provide more customization options.
 
-![Kagi Maps - Geolocation Options](./media/kagi_maps_scalebar.png){width=500px data-zoomable}
+- **Distance Units**  
+  Choose between Metric and Imperial units for navigation and the map’s scalebar. By default, Kagi Maps uses the metric system, but you can switch to imperial if you prefer.
 
-Clicking on the scale bar will toggle between metric and imperial units. The scale bar will update to reflect the selected unit system, and any distances shown in Kagi Maps, such as route lengths, will be displayed using the chosen units.
+- **Local POIs Only (beta)**  
+  Toggle this option to filter out most chain stores and major brands, showing primarily local points of interest on the map. Note that this does not affect search results—it only changes which POIs are displayed on the map itself.
 
-Changing the unit system can be helpful if you are more comfortable with a particular system or if you need to match the units used in other applications or documents.
+::: info
+Many more customization options are planned for future releases.
+:::
+
+These settings help you tailor Kagi Maps to your preferences, whether you want a more local experience or need to adjust measurement units for your region.
